@@ -7,6 +7,7 @@ import puppeteer from 'puppeteer';
   });
   const page = await browser.newPage();
   await page.goto('https://littlehorseboy.github.io/typescript-react/dist/');
+
   const inputAccount = await page.$('#app > div > div.MuiContainer-root.jss16 > div:nth-child(3) > div > div > input');
   if (inputAccount) {
     await inputAccount.focus();
